@@ -84,5 +84,12 @@
         $x = "Ciao a tutti";
         echo $x ?? $y;
     ?>
+
+    <hr>
+    <h2>Precedenza degli operatori</h2>
+    <?= 5 + 10 * 2 // Senza parentesi ?>
+    <?= (5 + 10) * 2 // Con parentesi?>
+
+
 </body>
 </html>
