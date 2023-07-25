@@ -21,9 +21,11 @@
     <hr>
     <h2>Operatori di Stringhe</h2>
     <?php
-        echo 'Stringa 1' . ' + ' . 'Stringa 2' . '<br>';
+        /* echo 'Stringa 1' . ' + ' . 'Stringa 2' . '<br>'; */
         $str1 = 'Stringa 1';
-        echo $str1 .= ' + Stringa 2';
+        echo $str1 . '<br>';
+        $str1 .= ' + Stringa 2';
+        echo $str1;
         // Entrambi: Stringa 1 + Stringa 2
     ?>
     <hr>
@@ -40,7 +42,7 @@
     <hr>
     <h2>Operatori di Incremento/Decremento</h2>
     <?php
-    $x = 1;
+        $x = 1;
         echo ++$x; // 2
         echo $x++; // 2
         echo $x; // 3
@@ -70,7 +72,7 @@
         echo $bool = false || true; // vero
         echo $bool = false or true; // vero
         echo $bool = false xor true; // falso
-        $x = 3;
+        $x = 3; // true
         echo !$x; // falso
     ?>
 
@@ -79,8 +81,8 @@
     <?php
         $x = NULL;
         $y = "Ciao, Mondo!";
-        //$x = "Ciao a tutti";
-        echo $x ?? $y; // "Ciao a tutti"
+        $x = "Ciao a tutti";
+        echo $x ?? $y;
     ?>
 </body>
 </html>
