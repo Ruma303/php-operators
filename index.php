@@ -10,6 +10,7 @@
 <body>
     <h1 style="text-align: center">Operatori in PHP</h1>
     <h2>Operatori Aritmetici</h2>
+
     <?php
         echo 2 + 2 . '<br>'; // 4
         echo 8 - 3 . '<br>'; // 5
@@ -70,7 +71,7 @@
         echo $bool = true && false; // falso
         echo $bool = true and false; // vero
         echo $bool = false || true; // vero
-        echo $bool = false or true; // vero
+        echo $bool = false or true; // true
         echo $bool = false xor true; // falso
         $x = 3; // true
         echo !$x; // falso
